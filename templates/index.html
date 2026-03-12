@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+<meta charset="UTF-8">
+<title>Buscador de CEP</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h2><i class="fa-solid fa-map-location-dot"></i> Buscador de CEP</h2>
+
+</header>
+
+
+<div class="container">
+
+<h1>Encontre qualquer endereço</h1>
+
+<p class="sub">
+Digite um CEP para localizar o endereço rapidamente.
+</p>
+
+<form method="POST">
+
+<input type="text" name="cep" placeholder="Digite o CEP (ex: 13232254)" required>
+
+<button type="submit">
+
+<i class="fa-solid fa-search"></i>
+Buscar
+
+</button>
+
+</form>
+
+{% if dados %}
+
+<div class="resultado">
+
+<h2>Endereço encontrado</h2>
+
+<div class="info">
+
+<p><strong>Rua:</strong> {{ dados.logradouro }}</p>
+<p><strong>Bairro:</strong> {{ dados.bairro }}</p>
+<p><strong>Cidade:</strong> {{ dados.localidade }}</p>
+<p><strong>Estado:</strong> {{ dados.uf }}</p>
+
+</div>
+
+<a 
+href="https://www.google.com/maps/search/?api=1&query={{ dados.logradouro }} {{ dados.localidade }}" 
+target="_blank"
+class="maps-btn">
+
+<i class="fa-solid fa-map-location-dot"></i>
+Abrir no Google Maps
+
+</a>
+
+
+<div class="mapa">
+
+<iframe
+width="100%"
+height="300"
+style="border:0"
+loading="lazy"
+allowfullscreen
+src="https://www.google.com/maps?q={{ dados.logradouro }} {{ dados.localidade }}&output=embed">
+
+</iframe>
+
+</div>
+
+</div>
+
+{% endif %}
+
+</div>
+
+
+<footer>
+
+<p>Projeto desenvolvido em Python + Flask</p>
+
+</footer>
+
+</body>
+</html>
