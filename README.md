@@ -1,36 +1,36 @@
-# 📍 Consulta de CEP com Python e Flask
+# 📍 Buscador de CEP
 
 Aplicação web desenvolvida em **Python** utilizando **Flask** que permite consultar informações de um CEP brasileiro através da API **ViaCEP**.
 
-O sistema exibe:
+O sistema retorna automaticamente:
 
 - Rua
 - Bairro
 - Cidade
 - Estado
-- Botão para abrir localização no Google Maps
+- Botão para abrir a localização no Google Maps
 - Mapa incorporado na página
 
 ---
 
-## 🚀 Tecnologias utilizadas
+# 🚀 Tecnologias utilizadas
 
 - Python
 - Flask
 - HTML
 - CSS
 - API ViaCEP
-- Google Maps
+- Integração com Google Maps
 
 ---
 
-## 📷 Preview do projeto
+# 📷 Preview do projeto
 
-<img src="preview.png" width="600">
+![[Preview do Projeto](https://raw.githubusercontent.com/Eduardo-j27/consulta-cep-flask/refs/heads/main/imagem_2026-03-12_144846334.png)](preview.png)
 
 ---
 
-## ⚙️ Como executar o projeto
+# ⚙️ Como executar o projeto
 
 Clone o repositório:
 
