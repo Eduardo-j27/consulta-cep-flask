@@ -26,7 +26,7 @@ O sistema retorna automaticamente:
 
 # 📷 Preview do projeto
 
-![[Preview do Projeto](https://raw.githubusercontent.com/Eduardo-j27/consulta-cep-flask/refs/heads/main/imagem_2026-03-12_144846334.png)](preview.png)
+![Preview do Projeto](https://raw.githubusercontent.com/Eduardo-j27/consulta-cep-flask/refs/heads/main/imagem_2026-03-12_144846334.png)
 
 ---
 
@@ -35,4 +35,4 @@ O sistema retorna automaticamente:
 Clone o repositório:
 
 ```bash
-git clone https://github.com/SEU-USUARIO/consulta-cep-flask.git
+git clone https://github.com/Eduardo-j27/consulta-cep-flask.git
